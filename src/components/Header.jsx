@@ -31,7 +31,7 @@ const Header = () => {
         >
           {Links.map((Link) => {
             return (
-              <li className="text-sm md:my-0 my-7" key={Link.name}>
+              <li className="text-lg md:my-0 my-7" key={Link.name}>
                 <NavLink to={Link.link}>{Link.name}</NavLink>
               </li>
             );
