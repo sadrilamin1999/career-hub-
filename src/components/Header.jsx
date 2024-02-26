@@ -14,7 +14,7 @@ const Header = () => {
     setOpen(!open);
   };
   return (
-    <div className="w-full relative top-0 left-0 shadow-md z-[100]">
+    <div className=" w-full relative top-0 left-0 shadow-md z-[100]">
       <div className=" container mx-auto md:flex items-center justify-between py-4">
         <div className="font-bold flex text-2xl cursor-pointer items-center text-gray-800">
           <h4 className="text-3xl text-dark">Career Hub</h4>
@@ -31,7 +31,7 @@ const Header = () => {
         >
           {Links.map((Link) => {
             return (
-              <li className="text-lg md:my-0 my-7" key={Link.name}>
+              <li className="text-[1rem] md:my-0 my-7" key={Link.name}>
                 <NavLink to={Link.link}>{Link.name}</NavLink>
               </li>
             );
