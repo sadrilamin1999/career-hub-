@@ -37,29 +37,27 @@ const users = [
 
 const Hero = () => {
   return (
-    <div className="w-full full flex justify-center items-center">
-      <div className="container w-full h-full">
-        <Swiper
-          spaceBetween={30}
-          centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Autoplay, Navigation]}
-          className="mySwiper"
-        >
-          {users.map((user, index) => (
-            <SwiperSlide key={index}>
-              <Slide user={user} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+    <div className="container w-full h-full mx-auto">
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Navigation]}
+        className="mySwiper"
+      >
+        {users.map((user, index) => (
+          <SwiperSlide key={index}>
+            <Slide user={user} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };

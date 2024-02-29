@@ -9,9 +9,9 @@ const Catagory = () => {
           Explore thousands of job opportunities with all the information you
           need. Its your future
         </p>
-        <div className="catagories grid md:grid-cols-3 gap-20 mt-10">
+        <div className="catagories grid md:grid-cols-4 gap-6 mt-10">
           {/* card */}
-          <div className="p-10 bg-sky-50 flex flex-col hover:shadow-md duration-300">
+          <div className="p-10 bg-sky-50 flex flex-col rounded-lg hover:shadow-md duration-300">
             <div className="header">
               <div className="bg-sky-100 w-[70px] h-[70px] flex justify-center items-center">
                 <BsCalculator className="h-[40px] w-[40px]" />
@@ -22,7 +22,8 @@ const Catagory = () => {
               <p className="mt-2">300 Jobs Available</p>
             </div>
           </div>
-          <div className="p-10 bg-sky-50 flex flex-col hover:shadow-md duration-300">
+          {/* card-2 */}
+          <div className="p-10 bg-sky-50 flex flex-col rounded-lg hover:shadow-md duration-300">
             <div className="header">
               <div className="bg-sky-100 w-[70px] h-[70px] flex justify-center items-center">
                 <BsCalculator className="h-[40px] w-[40px]" />
@@ -33,7 +34,19 @@ const Catagory = () => {
               <p className="mt-2">300 Jobs Available</p>
             </div>
           </div>
-          <div className="p-10 bg-sky-50 flex flex-col hover:shadow-md duration-300">
+          {/* card-3 */}
+          <div className="p-10 bg-sky-50 flex flex-col rounded-lg hover:shadow-md duration-300">
+            <div className="header">
+              <div className="bg-sky-100 w-[70px] h-[70px] flex justify-center items-center">
+                <BsCalculator className="h-[40px] w-[40px]" />
+              </div>
+            </div>
+            <div className="body mt-8">
+              <h4 className="text-2xl">Account & Finance</h4>
+              <p className="mt-2">300 Jobs Available</p>
+            </div>
+          </div>
+          <div className="p-10 bg-sky-50 flex flex-col rounded-lg hover:shadow-md duration-300">
             <div className="header">
               <div className="bg-sky-100 w-[70px] h-[70px] flex justify-center items-center">
                 <BsCalculator className="h-[40px] w-[40px]" />

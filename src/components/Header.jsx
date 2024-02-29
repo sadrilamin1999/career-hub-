@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   const [open, setOpen] = useState(false);
   let Links = [
-    { name: "Home", link: "/" },
+    { name: "Statistics", link: "/" },
     { name: "Applied Jobs", link: "/applied_jobs" },
     { name: "Blog", link: "/blog" },
   ];
@@ -38,7 +38,7 @@ const Header = () => {
           })}
         </ul>
         <div className="">
-          <Button />
+          <Button text="Start Applying" />
         </div>
       </div>
     </div>
